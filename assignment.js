@@ -110,4 +110,23 @@ console.log(percentages);
 
 
 
-/*--------------------------6 -------------------------*/
+/*--------------------------6 BASIC ARRAY OPERATIONS (METHODS)-------------------------*/
+/*
+const neighbours = [`Austria`, `Serbia`, `Croatia`, `Slovenia`, `Romania`, `Ukraine`, `Slovakia`]; 
+
+neighbours.push(`Utopia`);
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes(`Germany`)) {
+  console.log(`Probably not a central European country :D`);
+}
+
+// neighbours[5] = `War in Ukraine`;
+// console.log(neighbours);
+
+neighbours[neighbours.indexOf(`Ukraine`)] = `War in Ukraine`;
+console.log(neighbours);
+*/
