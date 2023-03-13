@@ -130,3 +130,19 @@ if (!neighbours.includes(`Germany`)) {
 neighbours[neighbours.indexOf(`Ukraine`)] = `War in Ukraine`;
 console.log(neighbours);
 */
+
+
+
+/*--------------------------7 INTRODUCTION OF OBJECTS -------------------------*/
+/*
+const myCountry = {
+  country: `Hungary`,
+  capital: `Budapest`,
+  language: `Hungarian`,
+  population: 9.71,
+  neighbours: [`Austria`, `Serbia`, `Croatia`, `Slovenia`, `Romania`, `Ukraine`, `Slovakia`]
+};
+*/
+
+
+/*--------------------------8 -------------------------*/
