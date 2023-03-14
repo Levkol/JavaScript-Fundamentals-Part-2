@@ -145,4 +145,21 @@ const myCountry = {
 */
 
 
-/*--------------------------8 -------------------------*/
+/*--------------------------8 DOT VS BRACKET NOTATION -------------------------*/
+/*
+const myCountry = {
+  country: `Hungary`,
+  capital: `Budapest`,
+  language: `Hungarian`,
+  population: 9.71,
+  neighbours: [`Austria`, `Serbia`, `Croatia`, `Slovenia`, `Romania`, `Ukraine`, `Slovakia`]
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry.population -= 2;
+console.log(myCountry.population);
+*/
