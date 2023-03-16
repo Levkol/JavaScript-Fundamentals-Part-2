@@ -163,3 +163,102 @@ console.log(myCountry.population);
 myCountry.population -= 2;
 console.log(myCountry.population);
 */
+
+
+
+ /*
+const myCountry = {
+  country: `Hungary`,
+  capital: `Budapest`,
+  language: `hungarian`,
+  population: 9.71,
+  neighbours: [`Austria`, `Serbia`, `Croatia`, `Slovenia`, `Romania`, `Ukraine`, `Slovakia`],
+
+  describe: function(){
+    console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+  },
+
+  checkIsland: function(){
+    //this.isIsland = this.neighbours.length === 0 ? `true` : `false`;
+    this.isIsland = !Boolean(this.neighbours.length);
+    return this.isIsland;
+  }
+
+
+};
+myCountry.describe();
+console.log(myCountry.checkIsland());
+*/
+
+
+
+/*--------------------------9 ITERATION: THE FOR LOOP -------------------------*/
+/*
+for(let voter = 1 ; voter <= 50 ; voter++){
+  console.log(`Voter number ${voter} is currently voting`);
+}
+*/
+
+
+
+/*--------------------------10 LOOPING ARRAYS, BREAKING AND CONTINUING-------------------------*/
+/*
+const populations = [9.71, 10, 1441, 332];
+
+const percentage2 = [];
+
+const percentageOfWorld1 = function(populations){
+  return (populations / 7900) * 100;
+};
+
+for( let i = 0; i < populations.length; i++){
+  const perc = percentageOfWorld1(populations[i]);
+  percentage2.push(perc);
+};
+
+console.log(percentage2);
+*/
+
+
+
+/*--------------------------11 LOOPONG BACKWARDS AND LOOPS IN LOOPS-------------------------*/
+//SOLUTION:
+/*
+ const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russian`]];
+
+ for(let i = 0; i < listOfNeighbours.length; i++){
+    for(let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(listOfNeighbours[i] [y]);
+ };
+*/
+
+//BASIC EXPLANATION OF THE SOLUTION:
+const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russian`]];
+ 
+ for(let i = 0; i < listOfNeighbours.length; i++) {
+  let neighbour = listOfNeighbours[i]; 
+// right?  we're used to doing this...
+// neighbour will be an arry such as ['Canada', 'Mexico']
+
+  for(let j = 0; j < neighbour.lenth; j++) {
+    console.log(`Neighbours: ${neighbour[j]}`); // again nothing special here...
+  }
+}
+
+
+//ADVANCED - recursion:
+/* 
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', ['Sweden'], 'Russia']];
+
+function processNeighbours(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] instanceof Array) {
+      processNeighbours(array[i]);
+    } else {
+      console.log(`Neighbours: ${array[i]}`);
+    }
+  }
+}
+
+processNeighbours(listOfNeighbours);
+*/

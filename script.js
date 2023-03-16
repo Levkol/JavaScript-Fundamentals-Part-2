@@ -432,7 +432,7 @@ console.log(jonas.calcAge());
 console.log(jonas.age);
 console.log(jonas.age);
 console.log(jonas.age);
-*/
+
 
 //Challenge
 // Jonas is a 46-years old teacher, and he has a/no driver's license.
@@ -455,3 +455,179 @@ const jonas = {
   }
 };
 console.log(jonas.getSummary());
+
+*/
+
+
+
+/*--------------------------3 CODING CHALLENGE-------------------------*/
+/*
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+Your tasks:
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. 
+Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+GOOD LUCK 😀
+
+
+const mark = {
+  fullName: `Mark Miller`,
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function (){
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  }
+};
+
+const john = {
+  fullName: `John Smith`,
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function (){
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  }
+}
+
+(mark.calcBMI());
+(john.calcBMI());
+
+//console.log(`${mark.BMI > john.BMI ? mark.fullName : john.fullName}'s BMI (${mark.BMI > john.BMI ? mark.BMI : john.BMI}) is higher than ${mark.BMI > john.BMI ? john.fullName : mark.fullName}'s (${mark.BMI > john.BMI ? john.BMI : mark.BMI})!`);
+
+if(mark.BMI > john.BMI){
+  console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})!`);
+} else {
+  console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI})!`);
+}
+
+*/
+
+
+
+/*--------------------------12 ITERATION: THE FOR LOOP-------------------------*/
+/*
+// console.log(`Lifting weights repetition 1 🏋️`);
+// console.log(`Lifting weights repetition 2 🏋️`);
+// console.log(`Lifting weights repetition 3 🏋️`);
+// console.log(`Lifting weights repetition 4 🏋️`);
+// console.log(`Lifting weights repetition 5 🏋️`);
+// console.log(`Lifting weights repetition 6 🏋️`);
+// console.log(`Lifting weights repetition 7 🏋️`);
+// console.log(`Lifting weights repetition 8 🏋️`);
+// console.log(`Lifting weights repetition 9 🏋️`);
+// console.log(`Lifting weights repetition 10 🏋️`);
+
+for(let rep = 1; rep <= 10; rep = rep + 1){
+  console.log(`Lifting weights repetition ${rep} 🏋️`);
+}
+*/
+
+
+
+/*--------------------------13 LOOPING ARRAYS, BREAKING AND CONTINUING-------------------------*/
+/*
+const jonas = [
+  `Jonas`,
+  `Schmedtmann`,
+  2037 - 1991,
+  `teacher`,
+  [`Michael`, `Peter`, `Steven`],
+  true
+];
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+  //Reading from jonas array
+  console.log(jonas[i], typeof jonas[i]);
+  //Filling types array
+  //types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+
+};
+
+//types[0] = `string`;
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+
+//Continue
+const jonas = [
+  `Jonas`,
+  `Schmedtmann`,
+  2037 - 1991,
+  `teacher`,
+  [`Michael`, `Peter`, `Steven`],
+  true
+];
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== `string`) continue;
+  console.log(jonas[i], typeof jonas[i]);
+};
+
+
+
+//Break
+const jonas = [
+  `Jonas`,
+  `Schmedtmann`,
+  2037 - 1991,
+  `teacher`,
+  [`Michael`, `Peter`, `Steven`],
+  true
+];
+
+for (let i = 0; i < jonas.length; i++){
+  if(typeof jonas[i] === `number`) break;
+  console.log(jonas[i], typeof jonas[i]);
+};
+*/
+
+
+
+/*--------------------------14 LOOPONG BACKWARDS AND LOOPS IN LOOPS-------------------------*/
+/*
+const jonas = [
+  `Jonas`,
+  `Schmedtmann`,
+  2037 - 1991,
+  `teacher`,
+  [`Michael`, `Peter`, `Steven`],
+  true
+];
+
+for(let i = jonas.length-1; i >= 0; i--){
+ console.log(i, jonas[i]); 
+}
+
+
+for(let exercise = 1; exercise < 4; exercise++){
+  console.log(`----------- Starting exercise ${exercise}`);
+
+  for(let rep = 1; rep < 6; rep++){
+    console.log(`Exercise ${exercise} Lifting weight repetition ${rep}!`);
+  }
+}
+*/
+
+
+
+/*--------------------------15 -------------------------*/
