@@ -230,7 +230,7 @@ console.log(percentage2);
     for(let y = 0; y < listOfNeighbours[i].length; y++)
     console.log(listOfNeighbours[i] [y]);
  };
-*/
+
 
 //BASIC EXPLANATION OF THE SOLUTION:
 const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russian`]];
@@ -247,7 +247,7 @@ const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, 
 
 
 //ADVANCED - recursion:
-/* 
+
 const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', ['Sweden'], 'Russia']];
 
 function processNeighbours(array) {
@@ -262,3 +262,7 @@ function processNeighbours(array) {
 
 processNeighbours(listOfNeighbours);
 */
+
+
+
+/*--------------------------12 THE WHILE LOOP-------------------------*/
