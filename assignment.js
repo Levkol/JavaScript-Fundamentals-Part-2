@@ -266,3 +266,27 @@ processNeighbours(listOfNeighbours);
 
 
 /*--------------------------12 THE WHILE LOOP-------------------------*/
+
+const populations = [9.71, 10, 1441, 332];
+
+// const percentage2 = [];
+
+const percentage3 = [];
+
+const percentageOfWorld1 = function(populations){
+  return (populations / 7900) * 100;
+};
+
+// for( let i = 0; i < populations.length; i++){
+//   const perc = percentageOfWorld1(populations[i]);
+  // percentage2.push(perc);
+// };
+
+let i = 0;
+while(i < populations.length){
+  const perc = percentageOfWorld1(populations[i]);
+  percentage3.push(perc);
+  i++;
+}
+
+console.log(percentage3);
