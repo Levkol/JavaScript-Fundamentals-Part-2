@@ -266,7 +266,7 @@ processNeighbours(listOfNeighbours);
 
 
 /*--------------------------12 THE WHILE LOOP-------------------------*/
-
+/*
 const populations = [9.71, 10, 1441, 332];
 
 // const percentage2 = [];
@@ -290,3 +290,4 @@ while(i < populations.length){
 }
 
 console.log(percentage3);
+*/
