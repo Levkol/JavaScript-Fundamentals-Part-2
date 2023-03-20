@@ -677,6 +677,7 @@ Bonus:
 GOOD LUCK 😀
 */
 
+/* My code:
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totalts = [];
@@ -691,10 +692,38 @@ for(let i = 0; i <= bills.length - 1; i++){
   totalts.push(bills[i] + tips[i]);
 }
  console.log(tips);
- console.log(totalts);
-
- const arr = [];
- const calcAverage = function (arr){
-  
-
+ console.log(totalts);  
+ 
  }
+ */
+
+//Jonas code:
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (tip) {
+  return tip >= 50 && tip <= 300 ? tip * 0.15 : tip * 0.2;
+}
+
+for(let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i]);                        // we can use here const bc its not changing, we create a new one...
+  tips.push(tip);
+  totals.push(tip + bills [i]);
+}
+
+console.log(bills, tips, totals);
+
+//////////////////////////////////////BONUS////////////////////////////////////////
+const calcAverage =  function(arr){
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    //sum = sum + arr[i];
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
