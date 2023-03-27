@@ -99,21 +99,44 @@ const myCountry = {
 //--------------------------8 DOT VS BRACKET NOTATION -------------------------
 /*
 const myCountry = {
-    country : `Hungary`,
-    capital : `Budapest`,
-    language : `hungarian`,
-    population : 9.71,
-    neighbours : [`Austria`, `Croatia`, `Romania`, `Serbia`, `Slovakia`, `Slovenia`, `Ukraine`]
+    country: `Hungary`,
+    capital: `Budapest`,
+    language: `hungarian`,
+    population: 9.71,
+    neighbours: [`Austria`, `Croatia`, `Romania`, `Serbia`, `Slovakia`, `Slovenia`, `Ukraine`]
 };
 
 myCountry.population += 2;
 myCountry[`population`] -= 2;
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighboursing counrties and a capital called ${myCountry.capital}.`);
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries.`);
+console.log(`${myCountry[`country`]} has ${myCountry[`population`]} million ${myCountry[`language`]}-speaking people, ${myCountry[`neighbours.length`]} neighbouring countries.`);
 */
 
-//--------------------------9 OBJECT METHODS -------------------------
+//Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.
 
+//--------------------------9 OBJECT METHODS -------------------------
+/*
+const myCountry = {
+    country: `Hungary`,
+    capital: `Budapest`,
+    language: `hungarian`,
+    population: 9.71,
+    neighbours: [`Austria`, `Croatia`, `Romania`, `Serbia`, `Slovakia`, `Slovenia`, `Ukraine`],
+
+    describe: function() {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.language.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+
+    checkIsland: function() {
+        this.isIsland = this.neighbours.length === 0 ? `true`: `false`;
+        return this.isIsland;
+    }
+}
+
+myCountry.describe();
+console.log(myCountry.checkIsland());
+*/
 
 //--------------------------10 ITERATION: THE FOR LOOP -------------------------
 
