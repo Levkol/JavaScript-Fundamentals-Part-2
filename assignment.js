@@ -139,12 +139,77 @@ console.log(myCountry.checkIsland());
 */
 
 //--------------------------10 ITERATION: THE FOR LOOP -------------------------
-
+/*
+for(let voters = 1; voters <= 50; voters ++){
+    console.log(`Voter number ${voters} is currently voting.`);
+}
+*/
 
 //--------------------------11 LOOPING ARRAYS, BREAKING AND CONTINUING-------------------------
+/*
+const population = [9.71, 6, 10, 1441];
+const percentages2 = [];
 
+for(let i = 0; i < population.length; i++){
+    percentages2.push (population[i] / 7900 *100);
+    };
+console.log(percentages2);
+
+//---
+
+const population = [9.71, 6, 10, 1441];
+const percentages2 = [];
+
+function percentageOfWorld1 (population) {
+    return population / 7900 *100;
+};
+
+for(let i = 0; i < population.length; i++){
+    const perc = percentageOfWorld1(population[i]);
+    percentages2.push (perc);
+    };
+console.log(percentages2);
+*/
 
 //--------------------------12 LOOPONG BACKWARDS AND LOOPS IN LOOPS-------------------------
+/*
+const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russia`]];
 
+for(let i = 0; i < listOfNeighbours.length; i++) {
+    let neighbours = listOfNeighbours[i];
+
+    for(let j = 0; j < neighbours.length; j++) {
+        console.log(`Neighbour: ${neighbours[j]}`);
+    }
+}
+
+
+//----
+
+const listOfNeighbours = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russia`]];
+
+for(let i = 0; i < listOfNeighbours.length; i++) {
+    for(let j = 0; j < listOfNeighbours[i].length; j++) {
+        console.log(`Neighbour: ${listOfNeighbours[i] [j]}`);
+    }
+}
+*/
 
 //--------------------------13 THE WHILE LOOP-------------------------
+/*
+const population = [9.71, 6, 10, 1441];
+const percentages2 = [];
+
+function percentageOfWorld1 (population) {
+    return population / 7900 *100;
+};
+
+let i = 0;
+while(i < population.length){
+    const perc = percentageOfWorld1(population[i]);
+    percentages2.push (perc);
+    i++;
+};
+
+console.log(percentages2);
+*/
